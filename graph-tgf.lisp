@@ -36,7 +36,7 @@
     (write-tgf graph output)))
 
 (defun write-tgf-to-file (graph pathname-designator
-                          &key if-exists)
+                          &key (if-exists :error))
   (with-open-file (stream pathname-designator
                           :direction :output
                           :if-exists if-exists)
