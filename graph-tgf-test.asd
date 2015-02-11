@@ -8,7 +8,7 @@
   :components ((:module "test"
                 :components ((:file "package")
                              (:file "test" :depends-on ("package")))))
-  :depends-on (:graph-tgf :myam :alexandria))
+  :depends-on (:graph-tgf :myam :alexandria :split-sequence))
 
 (defmethod perform ((op test-op)
                     (system (eql (find-system :graph-tgf-test))))
