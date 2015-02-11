@@ -30,5 +30,5 @@ install:
   #- git clone --depth=1 git://github.com/cl-babel/babel.git ~/lisp/babel
 
 script:
-  - cl -e '(ql:quickload "graph-tgf")
+  - cl -e '(ql:quickload "graph-tgf-test")
            (uiop:quit (if (myam:load-and-run! "graph-tgf-test") 0 1))'
