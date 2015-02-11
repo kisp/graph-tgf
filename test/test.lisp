@@ -30,8 +30,8 @@
 
 (deftest test.2
   (let ((graph (read-tgf (format nil "1~%2~%#~%"))))
-    (is (equal '(1 2) (nodes graph)))
-    (is (equal nil (edges graph)))))
+    (is (sequal '(1 2) (nodes graph)))
+    (is (sequal nil (edges graph)))))
 
 (deftest test.3
   (let* ((*package* (find-package :graph-tgf-test))
