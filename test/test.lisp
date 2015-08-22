@@ -91,6 +91,6 @@
   (let ((graph (populate (make-instance 'digraph))))
     (is (equal (format nil "#~%")
                (write-tgf-to-string graph)))))
-
+#+nil
 (deftest foo123
   (is (eql 123 (foo123))))

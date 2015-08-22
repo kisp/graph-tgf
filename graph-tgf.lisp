@@ -2,6 +2,8 @@
 
 (in-package :graph-tgf)
 
+(defun foo123 () 123)
+
 (defgeneric read-tgf (input))
 
 (defmethod read-tgf ((input string))

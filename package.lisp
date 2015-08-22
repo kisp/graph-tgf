@@ -2,7 +2,7 @@
 
 (defpackage :graph-tgf
   (:use :common-lisp :alexandria :graph)
-  (:export
+  (:export :foo123
    #:read-tgf
    #:read-tgf-from-file
    #:write-tgf-to-string
